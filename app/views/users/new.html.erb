@@ -1,0 +1,16 @@
+<h1>Build a Badge</h1>
+
+<%= simple_form_for(@user, :html => {:class => "form-vertical", id: 'signup_form'}) do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :title %>
+  <%= f.input :organization %>
+  <%= f.input :email %>
+
+  <h3>What inspires you?</h3>
+  <%= f.input :inspiration1, :label => '1' %>
+  <%= f.input :inspiration2, :label => '2' %>
+  <%= f.input :inspiration3, :label => '3' %>
+
+	<%= f.button :submit, 'Print Badge' %>
+<% end %>
