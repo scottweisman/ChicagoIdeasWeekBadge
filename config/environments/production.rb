@@ -25,7 +25,7 @@ Ideasweekbadge::Application.configure do
 
   # Precompile media because it is not in manifest
   # Ex: config.assets.precompile += ['admin.js', 'admin.css', 'swfObject.js']
-  config.assets.precompile += %w( print.css.scss )
+  config.assets.precompile += %w( print.css )
 
   # Specifies the header that your server uses for sending files
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
