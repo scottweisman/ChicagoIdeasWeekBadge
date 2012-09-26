@@ -1,6 +1,6 @@
-<h1>Build a Badge</h1>
 
-<%= simple_form_for(@user, :html => {:class => "form-vertical", id: 'signup_form'}) do |f| %>
+
+<%= simple_form_for(@user, :html => {:class => "form-horizontal", id: 'signup_form'}) do |f| %>
   <%= f.input :first_name %>
   <%= f.input :last_name %>
   <%= f.input :title %>
@@ -8,9 +8,18 @@
   <%= f.input :email %>
 
   <h3>What inspires you?</h3>
+  <br>
   <%= f.input :inspiration1, :label => '1' %>
   <%= f.input :inspiration2, :label => '2' %>
   <%= f.input :inspiration3, :label => '3' %>
 
-	<%= f.button :submit, 'Print Badge' %>
+	<%= f.button :submit, 'Create Badge', class: "btn-panuu-2 btn-large submit-form-btn" %>
+	<br>
+	<br>
+	<%= link_to "Cancel", root_path, class: "cancel-link"  %>
 <% end %>
+
+
+<script>
+
+</script>

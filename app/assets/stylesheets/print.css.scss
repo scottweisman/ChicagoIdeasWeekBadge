@@ -1,0 +1,35 @@
+h1, h2, .print-btn, .exit-link {
+	display: none;
+}
+
+.badge_info {
+	border: none
+}
+
+body {
+	font-family: 'Open Sans', helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 1.0;
+	// margin-left: 200px;    //Set margin for left side of paper here
+}
+
+.first_name {
+	font-size: 62px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.last_name {
+	font-size: 36px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.title {
+	margin-top: 60px;
+	font-weight: 700;
+}
+
+.organization {
+	font-weight: 300;
+}

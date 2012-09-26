@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
   <title>Chicago Ideas Week - Build a Badge</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "application", :media => "screen, projection" %>
+  <%= stylesheet_link_tag 	 "print", :media => 'print' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<h1><a href="/" rel="bookmark" title="Chicago Ideas Week Homepage">Chicago Ideas Week</a></h1>
+
+<h2>Build a Badge</h2>
+ <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="/"></a>
+      </div>
+    </div>
+  </div>
 
 <div class="container">
 	<%= yield %>

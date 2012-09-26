@@ -1,0 +1,14 @@
+<div class="badge_info">
+	<div class="first_name"><%= @user.first_name %></div>
+	<div class="last_name"><%= @user.last_name %></div>
+	<div class="title"><%= @user.title %></div>
+	<div class="organization"><%= @user.organization %></div>
+
+
+</div>
+
+
+<%= link_to "Print Badge", "", onclick: "window.print();", class: "btn btn-panuu-2 btn-large print-btn", method: "get" %>
+<br>
+<br>
+<%= link_to "Exit", root_path, class: "exit-link" %>
