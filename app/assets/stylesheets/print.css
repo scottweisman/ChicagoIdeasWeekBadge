@@ -10,7 +10,11 @@ body {
 	font-family: 'Open Sans', helvetica, sans-serif;
 	font-size: 18px;
 	line-height: 1.0;
-	// margin-left: 200px;    //Set margin for left side of paper here
+	/* margin-left: 200px;    //Set margin for left side of paper here */
+}
+
+.personal_info {
+	margin-left: 140px;
 }
 
 .first_name {
@@ -20,7 +24,7 @@ body {
 }
 
 .last_name {
-	font-size: 36px;
+	font-size: 62px;
 	font-weight: 300;
 	text-transform: uppercase;
 }
@@ -32,4 +36,27 @@ body {
 
 .organization {
 	font-weight: 300;
+}
+
+.inspirations {
+	margin-top: 40px;
+}
+
+.what_inspires {
+	float: left;
+	width: 100px;
+	border-right: 1px solid #444;
+	font-weight: 700;
+}
+
+.inspiration {
+	float: left;
+	font-weight: 300;
+	margin-left: 20px;
+	width: 130px;
+}
+
+.answer {
+	font-size: 14px;
+	font-weight: 700;
 }

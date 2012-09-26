@@ -32,6 +32,10 @@ h2 {
 	width: 400px;
 }
 
+.clear {
+	clear: both;
+}
+
 .navbar .brand {
 	margin-left: 260px;
 }
@@ -63,6 +67,10 @@ abbr[title] {
 	border-bottom: none;
 }
 
+.personal_info {
+	margin-left: 140px;
+}
+
 .badge_info {
 	border: 1px solid #777;
 	padding: 10px;
@@ -76,7 +84,7 @@ abbr[title] {
 }
 
 .last_name {
-	font-size: 36px;
+	font-size: 62px;
 	font-weight: 300;
 	text-transform: uppercase;
 }
@@ -88,6 +96,29 @@ abbr[title] {
 
 .organization {
 	font-weight: 300;
+}
+
+.inspirations {
+	margin-top: 40px;
+}
+
+.what_inspires {
+	float: left;
+	width: 100px;
+	border-right: 1px solid #444;
+	font-weight: 700;
+}
+
+.inspiration {
+	float: left;
+	font-weight: 300;
+	margin-left: 20px;
+	width: 130px;
+}
+
+.answer {
+	font-size: 14px;
+	font-weight: 700;
 }
 
 .print-btn {
