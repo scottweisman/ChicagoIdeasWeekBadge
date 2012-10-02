@@ -68,7 +68,13 @@ abbr[title] {
 }
 
 .personal_info {
-	margin-left: 140px;
+	margin-left: 150px;
+	margin-top: 20px;	
+}
+
+.badge_logo {
+  float: left;
+	
 }
 
 .badge_info {
@@ -90,7 +96,7 @@ abbr[title] {
 }
 
 .title {
-	margin-top: 60px;
+	margin-top: 45px;
 	font-weight: 700;
 }
 
@@ -99,7 +105,7 @@ abbr[title] {
 }
 
 .inspirations {
-	margin-top: 40px;
+	margin-top: 25px;
 }
 
 .what_inspires {
@@ -113,7 +119,9 @@ abbr[title] {
 	float: left;
 	font-weight: 300;
 	margin-left: 20px;
+	margin-right: 16px;
 	width: 130px;
+	height: 55px; overflow: hidden;
 }
 
 .answer {
@@ -152,3 +160,8 @@ input[type="submit"], input[type="reset"], input[type="button"], input[type="rad
 .btn-panuu-2:focus { color: #5f3500; -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); border-color: #FFD500 #e1b700 #e1b700 #FFD500; border-color: rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.25); }
 .btn-panuu-2.active, .btn-panuu-2:active { background-image: none; -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); color: #5f3500; }
 /* end .btn-panuu-2 */
+
+
+
+
+

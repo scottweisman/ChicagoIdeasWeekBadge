@@ -1,4 +1,4 @@
-h1, h2, .print-btn, .exit-link {
+h1, h2, .print-btn, .exit-link, .what_inspires, .answer, .badge_logo {
 	display: none;
 }
 
@@ -14,7 +14,8 @@ body {
 }
 
 .personal_info {
-	margin-left: 140px;
+	margin-left: 150px;
+	margin-top: 20px;
 }
 
 .first_name {
@@ -30,7 +31,7 @@ body {
 }
 
 .title {
-	margin-top: 60px;
+	margin-top: 45px;
 	font-weight: 700;
 }
 
@@ -39,7 +40,7 @@ body {
 }
 
 .inspirations {
-	margin-top: 40px;
+	margin-top: 25px;
 }
 
 .what_inspires {
@@ -53,7 +54,14 @@ body {
 	float: left;
 	font-weight: 300;
 	margin-left: 20px;
+	margin-right: 20px;
 	width: 130px;
+	height: 55px; overflow: hidden;
+	
+}
+
+.the_inspirations {
+  margin-left: 75px;
 }
 
 .answer {
