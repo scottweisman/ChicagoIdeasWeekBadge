@@ -15,7 +15,7 @@ body {
 
 .personal_info {
 	margin-left: 150px;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .first_name {
@@ -54,7 +54,7 @@ body {
 	float: left;
 	font-weight: 300;
 	margin-left: 20px;
-	margin-right: 20px;
+	margin-right: 10px;
 	width: 130px;
 	height: 55px; overflow: hidden;
 	
