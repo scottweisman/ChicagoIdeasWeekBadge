@@ -15,32 +15,36 @@ body {
 
 .personal_info {
 	margin-left: 150px;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 .first_name {
 	font-size: 62px;
 	font-weight: 800;
 	text-transform: uppercase;
+	margin-left: 250px;
 }
 
 .last_name {
 	font-size: 62px;
 	font-weight: 300;
 	text-transform: uppercase;
+	margin-left: 250px;
 }
 
 .title {
-	margin-top: 15px;
+	margin-top: 40px;
+	margin-left: 250px;
 	font-weight: 700;
 }
 
 .organization {
 	font-weight: 300;
+	margin-left: 250px;
 }
 
 .inspirations {
-	margin-top: 45px;
+	margin-top: 50px;
 	margin-left: 10px;
 }
 
@@ -54,10 +58,18 @@ body {
 .inspiration {
 	float: left;
 	font-weight: 300;
-/*  margin-left: 10px;*/
-	margin-right: 45px;
+  margin-left: 260px;
+/*  margin-right: 25px;*/
 	width: 130px;
-	height: 55px; overflow: hidden;
+	height: 60px; overflow: hidden;
+	
+}
+
+.inspiration_last {
+	float: left;
+	font-weight: 300;
+	width: 130px;
+	height: 60px; overflow: hidden;
 	
 }
 
