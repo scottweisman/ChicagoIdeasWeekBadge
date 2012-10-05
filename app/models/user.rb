@@ -1,9 +1,11 @@
 class User < ActiveRecord::Base
   attr_accessible :email, :first_name, :inspiration1, :inspiration2, :inspiration3, :last_name, :organization, :title
 
-  validates_presence_of :first_name, message: "You forgot a little somthin'"
-  validates_presence_of :last_name, message: "You forgot a little somthin'"
-  validates_presence_of :email, message: "You forgot a little somthin'"
+  validates_presence_of :first_name, message: "You forgot a little something"
+  validates_presence_of :last_name, message: "You forgot a little something"
+  validates_presence_of :email, message: "You forgot a little something"
+  validates_presence_of :title, message: "You forgot a little something"
+  validates_presence_of :organization, message: "You forgot a little something"
   
   validates :first_name, :length => { :maximum => 11, :too_long => "%{count} characters is the maximum allowed" }
   validates :last_name, :length => { :maximum => 11, :too_long => "%{count} characters is the maximum allowed" }
