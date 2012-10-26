@@ -3,4 +3,7 @@ Ideasweekbadge::Application.routes.draw do
 
   root :to => 'users#new'
 
+  get '/export_data/', :to => 'users#export_data', :as => :export_data
+
+
 end
