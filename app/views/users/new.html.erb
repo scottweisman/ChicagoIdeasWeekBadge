@@ -1,16 +1,27 @@
 
-<%= simple_form_for(@user, :html => {:class => "form-horizontal", id: 'signup_form'}) do |f| %>
-  <%= f.input :first_name, :limit => 11 %>
-  <%= f.input :last_name %>
-  <%= f.input :title %>
-  <%= f.input :organization %>
-  <%= f.input :email %>
 
-  <h3>What's your quest? (Limit 45 characters)</h3>
-  <%= f.input :inspiration1, :label => false, :input_html => {:maxlength => 45} %>
 
-	<%= f.button :submit, 'Create Badge', class: "btn-panuu-2 submit-form-btn" %>
-	<%= link_to "Cancel", root_path, class: "btn btn-danger"  %>
+<%= form_for(@user, html: {id: 'signup_form'}) do |f| %>
+  <div class="badge_info">
+    <div class="personal_info">
+      <div class="first_name"><%= f.text_field :first_name, :placeholder => 'First Name', :maxlength => 11 %></div>
+      <div class="last_name"><%= f.text_field :last_name, :placeholder => 'Last_Name' %></div>
+      <div class="divider"></div>
+      <div class="title"><%= f.text_field :title, :placeholder => 'Title' %>,</div>
+      <div class="organization"><%= f.text_field :organization, :placeholder => 'Organization' %></div>
+    </div>
+    <div class="inspirations">
+      <div class="the_inspirations">
+        <div class="inspiration"><br><%= f.text_field :inspiration1, :maxlength => 45 %></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <%= f.text_field :email %>
+
+  <%= f.submit "Create Badge" %>
 <% end %>
 
 
