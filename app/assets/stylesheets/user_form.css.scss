@@ -1,0 +1,48 @@
+
+#signup_form {
+  .error_messages {
+    width: $badge-width;
+    margin-top: 20px;
+    color: red;
+  }
+  .field_with_errors {
+    input[type="text"], input[type="email"] {
+      border: thin solid red;
+    }
+  }
+
+  .personal_info {
+    $personal-info-margin-top: .15 * $badge-height;
+    margin-left: $personal-info-margin-left;
+    margin-top: $personal-info-margin-top;
+    .divider {
+      width: $badge-width - $personal-info-margin-left - 20px;
+      border-bottom: 1px solid black;
+    }
+    .first_name {
+      input[type="text"] {
+        font-size: 1.5 * $base-font-size;
+        font-weight: 800;
+        letter-spacing: .04 * $base-font-size;
+        line-height: 1.5 * $base-font-size;
+        height: (1.5 * $base-font-size) + 10px;
+      }
+    }
+    .last_name {
+      input[type="text"] {
+        font-size: 1.5 * $base-font-size;
+        font-weight: 400;
+        letter-spacing: .04 * $base-font-size;
+        line-height: 1.5 * $base-font-size;
+        height: (1.5 * $base-font-size) + 10px;
+      }
+    }
+  }
+  .personal_email {
+    margin-top: 30px;
+    margin-left: $margin-form-button;
+  }
+  .inspirations {
+    margin-top: .035 * $badge-height;
+  }
+}

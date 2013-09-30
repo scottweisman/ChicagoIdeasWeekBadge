@@ -1,0 +1,17 @@
+<h2>Print Badge</h2>
+<div class="badge_info">
+	<div class="personal_info">
+		<div class="first_name"><%= @user.first_name %></div>
+		<div class="last_name"><%= @user.last_name %></div>
+    <div class="divider"></div>
+    <div class="title"><%= @user.title %>,</div>
+    <div class="organization"><%= @user.organization %></div>
+	</div>
+	<div class="inspirations">
+		<div class="the_inspirations">
+  		<div class="inspiration"><br><%= text_line_split(@user.inspiration1) %></div>
+  	</div>
+	</div>
+</div>
+<%= link_to "Print Badge", "", onclick: "window.print();", id: "print_button", class: "block btn btn-panuu-2 btn-large print-btn", method: "get" %>
+<%= link_to "Reset Badge", root_path, class: "btn btn-primary btn-large print-btn" %>

@@ -5,6 +5,7 @@ $personal-info-margin-top: .2143 * $badge-height;
 $name-font-family: 'Open Sans', helvetica, sans-serif;
 $title-font-family: 'PT Serif', serif;
 $base-font-size: $badge-width * .026315;
+$margin-form-button: 160px;
 
 body {
 	padding-top: 60px;
@@ -35,7 +36,6 @@ h2 {
 	text-shadow: 1px 1px 1px white;
 /*  margin: 20px;*/
 	padding: 10px;
-	width: 400px;
 }
 
 .clear {
@@ -73,6 +73,16 @@ abbr[title] {
 	border-bottom: none;
 }
 
+
+.badge_info {
+	border: 1px solid #777;
+	padding: 10px;
+	width: $badge-width;
+	height: $badge-height;
+	background-image: url('ideas_week_badge.png');
+	background-size: ($badge-width + 20px) ($badge-height + 20px);
+}
+
 .personal_info {
 	margin-left: $personal-info-margin-left;
 	margin-top: $personal-info-margin-top;
@@ -80,46 +90,39 @@ abbr[title] {
 		width: $badge-width - $personal-info-margin-left - 20px;
 		border-bottom: 1px solid black;
 	}
+	.first_name {
+		font-size: 3 * $base-font-size;
+		font-weight: 800;
+		letter-spacing: .04 * $base-font-size;
+	}
+	.last_name {
+		margin-top: 5px;
+		font-size: 3 * $base-font-size;
+		font-weight: 400;
+		margin-bottom: .03 * $badge-height;
+	}
+	.title {
+		padding-left: 5px;
+		font-family: $title-font-family;
+		margin-top: .03 * $badge-height;
+		font-weight: 400;
+		font-size: 1.2 * $base-font-size;
+		letter-spacing: .05em;
+	}
+	.organization {
+		padding-left: 5px;
+		margin-top: 5px;
+		font-family: $title-font-family;
+		font-weight: 400;
+		font-size: 1.2 * $base-font-size;
+		letter-spacing: .05em;
+	}
 }
 
-.badge_info {
-	border: 1px solid #777;
-	padding: 10px;
-	width: $badge-width;
-	height: $badge-height;
-}
 
-.first_name {
-	font-size: 3 * $base-font-size;
-	font-weight: 800;
-	letter-spacing: .04 * $base-font-size;
-}
-
-.last_name {
-	margin-top: 5px;
-	font-size: 3 * $base-font-size;
-	font-weight: 400;
-	margin-bottom: .03 * $badge-height;
-}
-
-.title {
-	font-family: $title-font-family;
-	margin-top: .03 * $badge-height;
-	font-weight: 400;
-	font-size: 1.2 * $base-font-size;
-	letter-spacing: .05em;
-}
-
-.organization {
-	margin-top: 5px;
-	font-family: $title-font-family;
-	font-weight: 400;
-	font-size: 1.2 * $base-font-size;
-	letter-spacing: .05em;
-}
 
 .inspirations {
-	margin-top: .1 * $badge-height;
+	margin-top: .125 * $badge-height;
 }
 
 .what_inspires {
@@ -136,7 +139,7 @@ abbr[title] {
 	margin-right: 15px;
 	width: $badge-width - $personal-info-margin-left;
 	height: 55px; overflow: hidden;
-	font-size: 1.2 * $base-font-size;
+	font-size: 1.15 * $base-font-size;
 }
 
 .answer {
@@ -159,7 +162,7 @@ a.cancel-link {
 }
 
 .submit-form-btn {
-	margin-left: 160px;
+	margin-left: $margin-form-button;
 }
 
 input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] {
@@ -192,3 +195,4 @@ input[type="submit"], input[type="reset"], input[type="button"], input[type="rad
 .block {
   display: block;
 }
+
