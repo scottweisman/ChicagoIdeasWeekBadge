@@ -8,7 +8,7 @@
   <%= f.input :email %>
 
   <h3>What's your quest? (Limit 45 characters each)</h3>
-  <%= f.input :inspiration1, :label => false, :limit => 45 %>
+  <%= f.input :inspiration1, :label => false, :input_html => {:maxlength => 45} %>
 
 	<%= f.button :submit, 'Create Badge', class: "btn-panuu-2 submit-form-btn" %>
 	<%= link_to "Cancel", root_path, class: "btn btn-danger"  %>

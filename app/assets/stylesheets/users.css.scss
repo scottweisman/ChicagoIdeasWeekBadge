@@ -1,14 +1,14 @@
 $badge-width: 684px;
 $badge-height: 384px;
-$personal-info-margin-left: .25 * $badge-width;
-$personal-info-margin-top: .10 * $badge-height;
+$personal-info-margin-left: .2857 * $badge-width;
+$personal-info-margin-top: .2143 * $badge-height;
 $name-font-family: 'Open Sans', helvetica, sans-serif;
-$title-font-family:
+$title-font-family: 'PT Serif', serif;
 
 body {
 	padding-top: 60px;
 	padding-bottom: 40px;
-	font-family: 'Open Sans', helvetica, sans-serif;
+	font-family: $name-font-family;
 	font-size: 18px;
 	line-height: 1.0;
 	background-color: #F7F5F6;
@@ -46,7 +46,7 @@ h2 {
 }
 
 input, button, select, textarea {
-	font-family: 'Open Sans', helvetica, sans-serif;
+	font-family: $name-font-family;
 }
 
 label, input, button, select, textarea {
@@ -75,6 +75,10 @@ abbr[title] {
 .personal_info {
 	margin-left: $personal-info-margin-left;
 	margin-top: $personal-info-margin-top;
+	.divider {
+		width: $badge-width - $personal-info-margin-left - 20px;
+		border-bottom: 1px solid black;
+	}
 }
 
 .badge_info {
@@ -87,24 +91,34 @@ abbr[title] {
 .first_name {
 	font-size: 3em;
 	font-weight: 800;
+	letter-spacing: .04em;
 }
 
 .last_name {
+	margin-top: 5px;
 	font-size: 3em;
-	font-weight: 300;
+	font-weight: 400;
+	margin-bottom: .03 * $badge-height;
 }
 
 .title {
-	margin-top: .1 * $badge-height;
-	font-weight: 500;
+	font-family: $title-font-family;
+	margin-top: .03 * $badge-height;
+	font-weight: 400;
+	font-size: 1.2em;
+	letter-spacing: .05em;
 }
 
 .organization {
-	font-weight: 500;
+	margin-top: 5px;
+	font-family: $title-font-family;
+	font-weight: 400;
+	font-size: 1.2em;
+	letter-spacing: .05em;
 }
 
 .inspirations {
-	margin-top: .2 * $badge-height;
+	margin-top: .1 * $badge-height;
 }
 
 .what_inspires {
@@ -121,7 +135,7 @@ abbr[title] {
 	margin-right: 15px;
 	width: $badge-width - $personal-info-margin-left;
 	height: 55px; overflow: hidden;
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 .answer {
