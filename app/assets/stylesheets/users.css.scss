@@ -1,9 +1,10 @@
 $badge-width: 684px;
-$badge-height: 384px;
+$badge-height: .5614 * $badge-width;
 $personal-info-margin-left: .2857 * $badge-width;
 $personal-info-margin-top: .2143 * $badge-height;
 $name-font-family: 'Open Sans', helvetica, sans-serif;
 $title-font-family: 'PT Serif', serif;
+$base-font-size: $badge-width * .026315;
 
 body {
 	padding-top: 60px;
@@ -89,14 +90,14 @@ abbr[title] {
 }
 
 .first_name {
-	font-size: 3em;
+	font-size: 3 * $base-font-size;
 	font-weight: 800;
-	letter-spacing: .04em;
+	letter-spacing: .04 * $base-font-size;
 }
 
 .last_name {
 	margin-top: 5px;
-	font-size: 3em;
+	font-size: 3 * $base-font-size;
 	font-weight: 400;
 	margin-bottom: .03 * $badge-height;
 }
@@ -105,7 +106,7 @@ abbr[title] {
 	font-family: $title-font-family;
 	margin-top: .03 * $badge-height;
 	font-weight: 400;
-	font-size: 1.2em;
+	font-size: 1.2 * $base-font-size;
 	letter-spacing: .05em;
 }
 
@@ -113,7 +114,7 @@ abbr[title] {
 	margin-top: 5px;
 	font-family: $title-font-family;
 	font-weight: 400;
-	font-size: 1.2em;
+	font-size: 1.2 * $base-font-size;
 	letter-spacing: .05em;
 }
 
@@ -135,7 +136,7 @@ abbr[title] {
 	margin-right: 15px;
 	width: $badge-width - $personal-info-margin-left;
 	height: 55px; overflow: hidden;
-	font-size: 1.2em;
+	font-size: 1.2 * $base-font-size;
 }
 
 .answer {
