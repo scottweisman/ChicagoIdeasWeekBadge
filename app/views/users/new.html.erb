@@ -7,10 +7,8 @@
   <%= f.input :organization %>
   <%= f.input :email %>
 
-  <h3>What inspires you? (Limit 24 characters each)</h3>
-  <%= f.input :inspiration1, :label => '1', :limit => 11 %>
-  <%= f.input :inspiration2, :label => '2' %>
-  <%= f.input :inspiration3, :label => '3' %>
+  <h3>What's your quest? (Limit 45 characters each)</h3>
+  <%= f.input :inspiration1, :label => false, :limit => 45 %>
 
 	<%= f.button :submit, 'Create Badge', class: "btn-panuu-2 submit-form-btn" %>
 	<%= link_to "Cancel", root_path, class: "btn btn-danger"  %>

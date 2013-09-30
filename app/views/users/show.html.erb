@@ -1,20 +1,13 @@
 <div class="badge_info">
-  <div class="badge_logo">
-    <%= image_tag 'badge_bulb.jpg' %>
-  </div>
 	<div class="personal_info">
 		<div class="first_name"><%= @user.first_name %></div>
 		<div class="last_name"><%= @user.last_name %></div>
-		<div class="title"><%= @user.title %></div>
+		<div class="title"><%= @user.title %>,</div>
 		<div class="organization"><%= @user.organization %></div>
 	</div>
 	<div class="inspirations">
-		<div class="what_inspires">What<br>Inspires<br>You?</div>
 		<div class="the_inspirations">
-  		<div class="inspiration"><span class="answer">Answer 1</span><br><%= text_line_split(@user.inspiration1) %></div>
-  		<div class="inspiration" style="margin-left: 45px; margin-right: 60px;"><span class="answer">Answer 2</span><br><%= text_line_split(@user.inspiration2) %></div>
-  		<div class="inspiration_last"><span class="answer">Answer 3</span><br><%= text_line_split(@user.inspiration3) %></div>
-  		<div class="clear"></div>
+  		<div class="inspiration"><br><%= text_line_split(@user.inspiration1) %></div>
   	</div>
 	</div>
 </div>

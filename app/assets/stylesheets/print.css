@@ -17,7 +17,7 @@ body {
 	margin-left: 150px;
 	margin-top: 50px;
 }
-
+`
 .first_name {
 	font-size: 62px;
 	font-weight: 800;
@@ -62,7 +62,7 @@ body {
 /*  margin-right: 25px;*/
 	width: 130px;
 	height: 60px; overflow: hidden;
-	
+
 }
 
 .inspiration_last {
@@ -70,7 +70,7 @@ body {
 	font-weight: 300;
 	width: 130px;
 	height: 60px; overflow: hidden;
-	
+
 }
 
 .the_inspirations {

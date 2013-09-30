@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
   validates :title, :length => { :maximum => 40, :too_long => "%{count} characters is the maximum allowed" }
   validates :organization, :length => { :maximum => 40, :too_long => "%{count} characters is the maximum allowed" }
   validates_format_of :email, :with => /@/
-  validates :inspiration1, :length => { :maximum => 24, :too_long => "%{count} characters is the maximum allowed" }
+  validates :inspiration1, :length => { :maximum => 45, :too_long => "%{count} characters is the maximum allowed" }
   validates :inspiration2, :length => { :maximum => 24, :too_long => "%{count} characters is the maximum allowed" }
   validates :inspiration3, :length => { :maximum => 24, :too_long => "%{count} characters is the maximum allowed" }
 
