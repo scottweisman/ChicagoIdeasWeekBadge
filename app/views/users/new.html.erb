@@ -1,5 +1,4 @@
 
-
 <%= simple_form_for(@user, :html => {:class => "form-horizontal", id: 'signup_form'}) do |f| %>
   <%= f.input :first_name, :limit => 11 %>
   <%= f.input :last_name %>
@@ -7,7 +6,7 @@
   <%= f.input :organization %>
   <%= f.input :email %>
 
-  <h3>What's your quest? (Limit 45 characters each)</h3>
+  <h3>What's your quest? (Limit 45 characters)</h3>
   <%= f.input :inspiration1, :label => false, :input_html => {:maxlength => 45} %>
 
 	<%= f.button :submit, 'Create Badge', class: "btn-panuu-2 submit-form-btn" %>
