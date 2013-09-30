@@ -1,13 +1,9 @@
 <%= form_for(@user, :remote => true, html: {id: 'signup_form', class: 'form-horizontal'}) do |f| %>
-  <% if @user.errors.any? %>
-    <h2>Please Correct the Following Errors</h2>
-    <div class="error_messages">
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <div class="error_messages">
+    <% if @user.errors.any? %>
+      <%= render 'error_message', :resource => @user %>
+    <% end %>
+  </div>
   <h2>Build a Badge</h2>
   <div class="badge_info">
     <div class="personal_info">

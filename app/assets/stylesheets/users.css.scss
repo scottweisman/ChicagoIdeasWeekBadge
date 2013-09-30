@@ -18,13 +18,12 @@ body {
 }
 
 .logo {
-	width: 160px;
-	height: 124px;
+	width: 180px;
 	background: url('ideas_week_logo.jpg') no-repeat !important;
 	background-position: -300px 0 !important;
 	position: absolute;
 	top: 0px;
-	left: 75px;
+	left: 65px;
 	z-index: 9999;
 }
 
@@ -162,6 +161,10 @@ a.cancel-link {
 }
 
 .submit-form-btn {
+	margin-left: $margin-form-button;
+}
+
+.badge_actions {
 	margin-left: $margin-form-button;
 }
 

@@ -13,5 +13,7 @@
   	</div>
 	</div>
 </div>
-<%= link_to "Print Badge", "", onclick: "window.print();", id: "print_button", class: "block btn btn-panuu-2 btn-large print-btn", method: "get" %>
-<%= link_to "Reset Badge", root_path, class: "btn btn-primary btn-large print-btn" %>
+<div class="badge_actions">
+    <%= link_to "Print Badge", "", onclick: "window.print();", id: "print_button", class: "block btn btn-panuu-2 btn-large print-btn", method: "get" %>
+    <%= link_to "Reset Badge", root_path, class: "btn btn-primary btn-large print-btn" %>
+</div>
