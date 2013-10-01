@@ -9,9 +9,16 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(params[:user])
 		if @user.save
-			redirect_to user_path(@user)
+			respond_to do |format|
+				format.js
+				format.html { redirect_to @user }
+			end
 		else
-			render :new
+			respond_to do |format|
+				format.js
+				format.html { render action: "new" }
+				format.json { render json: @user.errors, status: :unprocessable_entity }
+			end
 		end
 	end
 
