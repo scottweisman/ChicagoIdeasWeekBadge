@@ -7,15 +7,15 @@
   <h2>Build a Badge</h2>
   <div class="badge_info">
     <div class="personal_info">
-      <div class="first_name"><%= f.text_field :first_name, :placeholder => 'First Name', :maxlength => 11, :autocomplete => :off %></div>
-      <div class="last_name"><%= f.text_field :last_name, :placeholder => 'Last Name', :autocomplete => :off %></div>
+      <div class="first_name"><%= f.text_field :first_name, :placeholder => 'First Name', :autocomplete => :off, :maxlength => User.length_limits[:first_name], :autofocus => true %></div>
+      <div class="last_name"><%= f.text_field :last_name, :placeholder => 'Last Name', :maxlength => User.length_limits[:last_name], :autocomplete => :off %></div>
       <div class="divider"></div>
-      <div class="title"><%= f.text_field :title, :placeholder => 'Title', :autocomplete => :off %></div>
-      <div class="organization"><%= f.text_field :organization, :placeholder => 'Organization', :autocomplete => :off %></div>
+      <div class="title"><%= f.text_field :title, :placeholder => 'Title', :autocomplete => :off, :maxlength => User.length_limits[:title] %></div>
+      <div class="organization"><%= f.text_field :organization, :placeholder => 'Organization', :maxlength => User.length_limits[:organization], :autocomplete => :off %></div>
     </div>
     <div class="inspirations">
       <div class="the_inspirations">
-        <div class="inspiration"><br><%= f.text_field :inspiration1, :placeholder => 'Limit 45 Characters', :maxlength => 45, :autocomplete => :off %></div>
+        <div class="inspiration"><br><%= f.text_field :inspiration1, :placeholder => 'Limit 45 Characters', :maxlength => User.length_limits[:inspiration1], :autocomplete => :off %></div>
       </div>
     </div>
   </div>
