@@ -5,7 +5,6 @@ gem 'pg'
 gem 'thin'
 gem 'simple_form'
 gem "comma", "~> 3.0"
-gem "newrelic_rpm"
 gem "figaro"
 
 
