@@ -2,22 +2,35 @@
 <html>
 <head>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
   <title>Chicago Ideas Week - Build a Badge</title>
   <%= stylesheet_link_tag    "application", :media => "screen, projection" %>
   <%= stylesheet_link_tag 	 "print", :media => 'print' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <style type="text/css" media="print">
+      @page
+      {
+          size: auto;   /* auto is the current printer page size */
+          margin: 0mm;  /* this affects the margin in the printer settings */
+      }
+
+      body
+      {
+          margin: 0px;  /* the margin on the content before printing */
+          margin-top: -50px;
+     }
+  </style>
 </head>
 <body>
 
-<h1><a href="/" rel="bookmark" title="Chicago Ideas Week Homepage">Chicago Ideas Week</a></h1>
+<%= link_to image_tag('ideas_week_logo.jpg', class: 'logo'), root_path %>
 
-<h2>Build a Badge</h2>
  <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
         <a class="brand" href="/"></a>
-        <span class="logo_container"><em>powered by </em><a class="lpl_logo" href="http://launchpadlab.com" target="_blank"><%= image_tag 'logo.png' %></a></span>
+        <span class="logo_container"><em>powered by &nbsp;&nbsp;</em><a class="lpl_logo" href="http://launchpadlab.com" target="_blank"><%= image_tag 'LPL_logo_transpBG-no-text.png' %></a></span>
       </div>
     </div>
   </div>

@@ -5,6 +5,7 @@ gem 'pg'
 gem 'thin'
 gem 'simple_form'
 gem "comma", "~> 3.0"
+gem "figaro"
 
 
 # Gems used only for assets and not required

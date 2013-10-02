@@ -1,19 +1,28 @@
-
-
-<%= simple_form_for(@user, :html => {:class => "form-horizontal", id: 'signup_form'}) do |f| %>
-  <%= f.input :first_name, :limit => 11 %>
-  <%= f.input :last_name %>
-  <%= f.input :title %>
-  <%= f.input :organization %>
-  <%= f.input :email %>
-
-  <h3>What inspires you? (Limit 24 characters each)</h3>
-  <%= f.input :inspiration1, :label => '1', :limit => 11 %>
-  <%= f.input :inspiration2, :label => '2' %>
-  <%= f.input :inspiration3, :label => '3' %>
-
-	<%= f.button :submit, 'Create Badge', class: "btn-panuu-2 submit-form-btn" %>
-	<%= link_to "Cancel", root_path, class: "btn btn-danger"  %>
+<%= form_for(@user, :remote => true, html: {id: 'signup_form', class: 'form-horizontal'}) do |f| %>
+  <div class="error_messages">
+    <% if @user.errors.any? %>
+      <%= render 'error_message', :resource => @user %>
+    <% end %>
+  </div>
+  <h2>Build a Badge</h2>
+  <div class="badge_info">
+    <div class="personal_info">
+      <div class="first_name"><%= f.text_field :first_name, :placeholder => 'First Name', :autocomplete => :off, :maxlength => User.length_limits[:first_name], :autofocus => true %></div>
+      <div class="last_name"><%= f.text_field :last_name, :placeholder => 'Last Name', :maxlength => User.length_limits[:last_name], :autocomplete => :off %></div>
+      <div class="divider"></div>
+      <div class="title"><%= f.text_field :title, :placeholder => 'Title', :autocomplete => :off, :maxlength => User.length_limits[:title] %></div>
+      <div class="organization"><%= f.text_field :organization, :placeholder => 'Organization', :maxlength => User.length_limits[:organization], :autocomplete => :off %></div>
+    </div>
+    <div class="inspirations">
+      <div class="the_inspirations">
+        <div class="inspiration"><br><%= f.text_field :inspiration1, :placeholder => 'Limit 45 Characters', :maxlength => User.length_limits[:inspiration1], :autocomplete => :off %></div>
+      </div>
+    </div>
+  </div>
+  <div class="personal_email">
+    <%= f.email_field :email, :placeholder => 'Email Address' %>
+  </div>
+  <%= f.submit "Create Badge", class: "btn-panuu-2 submit-form-btn" %>
 <% end %>
 
 
