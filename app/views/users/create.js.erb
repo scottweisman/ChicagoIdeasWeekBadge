@@ -2,6 +2,6 @@
   $(".error_messages").replaceWith("<%= escape_javascript(render('error_message', resource: @user)) %>")
 <% else %>
   $("#signup_form").replaceWith("<%= escape_javascript(render('show')) %>");
-  window.print();
   _gaq.push(['_trackPageview', '/users']);
+  window.print();
 <% end %>
