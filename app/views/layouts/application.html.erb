@@ -8,19 +8,8 @@
   <%= stylesheet_link_tag 	 "print", :media => 'print' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <style type="text/css" media="print">
-      @page
-      {
-          size: auto;   /* auto is the current printer page size */
-          margin: 0mm;  /* this affects the margin in the printer settings */
-      }
-
-      body
-      {
-          margin: 0px;  /* the margin on the content before printing */
-          margin-top: -50px;
-     }
-  </style>
+  <%= render 'layouts/google_analytics' %>
+  <%= render 'layouts/print_settings' %>
 </head>
 <body>
 

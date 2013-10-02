@@ -1,4 +1,4 @@
-<%= form_for(@user, :remote => true, html: {id: 'signup_form', class: 'form-horizontal'}) do |f| %>
+<%= form_for(@user, html: {id: 'signup_form', class: 'form-horizontal'}) do |f| %>
   <div class="error_messages">
     <% if @user.errors.any? %>
       <%= render 'error_message', :resource => @user %>
