@@ -72,3 +72,10 @@ input[type="text"] {
   line-height: normal;
   // Centers the Placeholders Vertically
 }
+
+input:focus:required:invalid:focus {
+  border-color: #5C9DFF;
+  -webkit-box-shadow: 0 0 6px #4A7ECC;
+  -moz-box-shadow: 0 0 6px #4A7ECC;
+  box-shadow: 0 0 6px #4A7ECC;
+}
