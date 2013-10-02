@@ -7,22 +7,22 @@
   <h2>Build a Badge</h2>
   <div class="badge_info">
     <div class="personal_info">
-      <div class="first_name"><%= f.text_field :first_name, :placeholder => 'First Name', :autocomplete => :off, :maxlength => User.length_limits[:first_name], :autofocus => true %></div>
-      <div class="last_name"><%= f.text_field :last_name, :placeholder => 'Last Name', :maxlength => User.length_limits[:last_name], :autocomplete => :off %></div>
+      <div class="first_name"><%= f.text_field :first_name, :placeholder => 'First Name', :required => true, :title => "A first name is required", :autocomplete => :off, :maxlength => User.length_limits[:first_name], :autofocus => true %></div>
+      <div class="last_name"><%= f.text_field :last_name, :placeholder => 'Last Name', :maxlength => User.length_limits[:last_name], :required => true, :autocomplete => :off %></div>
       <div class="divider"></div>
-      <div class="title"><%= f.text_field :title, :placeholder => 'Title', :autocomplete => :off, :maxlength => User.length_limits[:title] %></div>
-      <div class="organization"><%= f.text_field :organization, :placeholder => 'Organization', :maxlength => User.length_limits[:organization], :autocomplete => :off %></div>
+      <div class="title"><%= f.text_field :title, :placeholder => 'Title', :required => true, :autocomplete => :off, :maxlength => User.length_limits[:title] %></div>
+      <div class="organization"><%= f.text_field :organization, :placeholder => 'Organization', :maxlength => User.length_limits[:organization], :required => true, :autocomplete => :off %></div>
     </div>
     <div class="inspirations">
       <div class="the_inspirations">
-        <div class="inspiration"><br><%= f.text_field :inspiration1, :placeholder => 'Limit 45 Characters', :maxlength => User.length_limits[:inspiration1], :autocomplete => :off %></div>
+        <div class="inspiration"><br><%= f.text_field :inspiration1, :placeholder => 'Limit 45 Characters', :maxlength => User.length_limits[:inspiration1], :required => true, :autocomplete => :off %></div>
       </div>
     </div>
   </div>
   <div class="personal_email">
-    <%= f.email_field :email, :placeholder => 'Email Address' %>
-  </div>
+    <%= f.email_field :email, :placeholder => 'Email Address', :required => true, title: "An email is required" %>
   <%= f.submit "Create Badge", class: "btn-panuu-2 submit-form-btn" %>
+  </div>
 <% end %>
 
 
